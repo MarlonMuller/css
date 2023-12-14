@@ -1,3 +1,43 @@
-h1 {
-    color: rgb(136, 20, 20)
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
+
+
+#pai {
+    background: green;
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#filho {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 15px;
+}
+
+#outra {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 15px;
+}
+
+input {
+    color: blue;
+}
+
+input::placeholder {
+    color: red;
+}
+

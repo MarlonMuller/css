@@ -1,70 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-    font-weight: 400;
     color: #5D5D7D;
+    font-weight: 400;
     box-sizing: border-box;
 }
 
-header{
-    background: #5d5d7d42;
-    width: 491px;
-    position: absolute;
-    right: 0px;
-    
+.wrapper {
+    height: 100vh;
+    width: 100vw;
 }
 
-nav {
-    position: absolute;
-}
-
-a {
-    font-size: 28px;
-    text-decoration: none;
-    margin-top: 24px;
-    margin-right: 41px;
-    margin-bottom: 151px;
+.container-left {
     display: inline-block;
+    width: 60%;
+}
+
+.container-right {
+    display: inline-block;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(93, 93, 125, 0.16);
 }
 
 img {
-    margin-right: 185.74px;
-    margin-bottom: 123.96;
-    position: absolute;
-    top:150px
-
-}
-
-main {
-    position: absolute;
+    position: relative;
+    top: 150px;
+    right: 150px;
 }
 
 h1 {
     font-size: 70px;
     line-height: 80px;
+    margin-top: 381px;
+    margin-left: 136px;
     width: 368px;
-    margin: 381px 314px 15px 136px;
 }
 
 p {
     font-size: 28px;
     line-height: 48px;
-    width: 540px;
     opacity: 0.6;
-    margin: 15px 142.7px 15px 136px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 136px;
+    width: 540px;
 }
 
 button {
-    background: #9499EA;
-    border: none;
-    border-radius: 25px;
     width: 269px;
     height: 62px;
+    background: #9499EA;
+    border: none;
+    border-radius: 30px;
     color: #FFF;
-    text-align: center;
     font-size: 24px;
-    margin: 15px 412px 123px 136px;
+    margin-left: 136px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+header {
+    margin: 24.12px 58px 0 57px;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 41px;
+    font-size: 28px;
+    line-height: normal;
+}
+
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+@media screen and (max-width:900px){
+
+    .container-left {
+        display: block;
+        width: 100%;
+        height: 50vh;
+        margin: 0;
+    }
+
+    .container-right {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 40px;
+    }
+
+    img {
+        position: static; 
+        max-width: 90%;       
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+
+    }
+
+    p {
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media screen and (max-width: 330px) {
+    .container-left {
+        height: 70%;
+    }
 }

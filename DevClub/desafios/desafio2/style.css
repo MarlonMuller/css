@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container-left{
+    display: inline-block;
+}
+
+#container-right{
+    display: inline-block;
+}
+
+header {
+    margin: 44px 0 0 76px;
+}
+
+a {
+    color: #989D9C;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 23px;
+}
+
+button#bt-header {
+    width: 130px;
+    height: 41px;
+    background: #665AE1;
+    color: #FFF;
+    border-radius: 25px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+img {
+    margin: 144px 0 0 125px;
+}
+
+h1 {
+    color: #515151;
+    font-size: 100px;
+    font-weight: 900;
+    margin: 144px 148px 0 86px;
+
+}
+
+h2 {
+    color: #515151;
+    font-size: 58px;
+    font-weight: 500;
+    margin: 0 213px 32px 86px;
+}
+
+p {
+    color: #848484;
+    font-size: 24px;
+    font-weight: 400;
+    width: 515px;
+    margin: 0 146px 65px 86px;
+}
+
+button#bt-explore {
+    width: 239px;
+    height: 64px;
+    background: #ADFF00;
+    border-radius: 25px;
+    border: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 0 86px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+
+    #container-left {
+        display: block;
+        width: 100vw;
+    }
+
+    #container-right {
+        display: block;
+        width: 100vw;
+    }
+
+
+    header, p {
+        display: none;
+    }
+
+    img {
+        margin: 149px 10px 0 10px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 50px;
+        width: auto;
+        text-align: center;
+        margin: 24px 10px 0 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+        width: auto;
+        text-align: center;
+        margin: 7px 10px 17px 10px;
+    }
+
+    button {
+        display: block;
+        margin: 0 10px 0 10px;
+    }
+
+}
